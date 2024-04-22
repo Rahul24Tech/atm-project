@@ -8,8 +8,6 @@ import openpyxl
 import json
 
 def upload_excel(request):
-    import pdb
-    pdb.set_trace()
     if request.method == "POST":
         form = ExcelUploadForm(request.POST, request.FILES)
         if form.is_valid():
