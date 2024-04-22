@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>{{ site.name }}</h1>
+  <p><strong>Site ID:</strong> {{ site.site_id }}</p>
+  <p><strong>Address:</strong> {{ site.address }}</p>
+  <p><strong>State:</strong> {{ site.state }}</p>
+  <p><strong>City:</strong> {{ site.city }}</p>
+  <p><strong>Contact Details:</strong></p>
+  <ul>
+    <li>Name: {{ site.contact_details.name }}</li>
+    <li>Phone: {{ site.contact_details.phone }}</li>
+    <li>Email: {{ site.contact_details.email }}</li>
+  </ul>
+{% endblock %}

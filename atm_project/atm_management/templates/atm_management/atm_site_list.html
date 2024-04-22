@@ -1,0 +1,10 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>ATM Site List</h1>
+  <ul>
+    {% for site in sites %}
+      <li><a href="{% url 'atm_management:atm_site_detail' site.site_id %}">{{ site.name }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}
